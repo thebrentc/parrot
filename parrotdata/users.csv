@@ -1,0 +1,12 @@
+#User emails and associated parrots
+#One per line, format: user email,parrot,"secret share" percentage 
+#example@example.com,TestParrot,100%
+#Add new lines to add additional parrots for user  
+
+*,TestParrot,100%
+test1@brentc.net,TestParrot2,50%
+test2@brentc.net,TestParrot2,50%
+test1@brentc.net,TestParrot3,100%
+test2@brentc.net,TestParrot3,100%
+thebrentc@gmail.com,Polly,50%
+fbrooks.brooks@googlemail.com,Polly,50%

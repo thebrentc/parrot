@@ -1,0 +1,6 @@
+DirectoryIndex index.shtml
+AddHandler cgi-script .cgi .shtml
+Options +ExecCGI 
+Options +Includes
+AddType text/html .shtml
+AddHandler server-parsed .shtml

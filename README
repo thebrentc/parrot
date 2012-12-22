@@ -1,0 +1,64 @@
+SLEEPING PARROTS
+
+GOAL
+
+Provides a means for users to access a 'secret' on demand without having to manage additional user logon details.
+
+The analogy is parrots are "sleeping" until awoken, when they deliver their secrets and also broadcast that they have been awakened. It's a digital 'sealed envelope' solution- users with access to the envelope can open it but it's obvious that the seal has been broken.
+
+HOW IT WORKS
+
+Users are linked to parrots by email address. When they enter their email address, they can choose to wake a relevant parrot. The secret is then emailed to the user that woke the parrot, and the parrot also notifies other users linked to that parrot that it has been awakened.
+
+Secrets can be 'shared' amongst a group, so that each user only receives, for example 50% of the secret, requiring more than one user to obtain the full secret.
+
+DISCLAIMERS
+
+It's intended for convenience rather than strong security.
+The code is not robust and consideration should be applied if deploying.
+
+TECHNICAL
+
+Programmed in Perl version 5.8.8.
+
+FILES
+
+Start: cgi-bin/index.cgi or cgi-in/index.shtml
+
+cgi-bin/parrot = contains Perl script files
+cgi-bin/parrot.ini = Settings e.g. file and data locations
+cgi-bin/parrotdata = users.csv, parrot.log and Parrot files
+users.csv = Links user emails to Parrot files
+
+FOR WEB DEPLOYMENT:
+cgi-bin/.htaccess = Default .htaccess which may need tweaking or moving 
+cgi-bin/index.cgi is modified to allow SSI inclusion in .html or .shtml files, but this hasn't been extended to other .cgi files in cgi-bin.
+cgi-bin/index.shtml sample file includes index.cgi, normally may be in a different directory outside cgi-bin
+
+Ideally, ./parrotdata should be moved outside web root.
+
+USAGE
+
+There is currently no database integration or administrative interface.
+
+Users and linked parrots need to be manually added to parrotdata/users.csv
+Parrot files need to be manually created in parrotdata/
+To reset user-parrot accesses, clear the relevant lines in parrotdata/parrot.log
+
+© Copyright 2012 www.brentc.net thebrentc@gmail.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+http://www.gnu.org/licenses/
+
