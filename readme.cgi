@@ -35,7 +35,7 @@ close $fh;
 print '</pre>';
 
 print qq^
-<div id="footer" style="width: 100%; position: absolute; top: 90%; text-align: center;">by: <a href="http://brentc.net">www.brentc.net</a>&nbsp;|&nbsp;<a href="readme.cgi">readme</a></div>
+<div id="footer" style="width: 100%; text-align: center;">by: <a href="http://brentc.net">www.brentc.net</a>&nbsp;|&nbsp;<a href="readme.cgi">readme</a></div>
 ^;
 
 print '</body>';
