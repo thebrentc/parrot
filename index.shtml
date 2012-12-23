@@ -9,6 +9,7 @@
 	<meta name="copyright" content="www.brentc.net"/>
 	<meta name="licence" content="GPL"/>	
 	<meta name="language" content="en-gb"/>
+        <link rel="icon" href="http://brentc.net/media/parrot-media/favicon.png" type="image/png"/>
 </head>
 <body>
 <!--#include virtual="/cgi-bin/parrot/index.cgi"-->
