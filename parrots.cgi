@@ -7,11 +7,21 @@ use CGI;
 print "Content-type: text/html\n\n";
 print '<!DOCTYPE HTML>';
 print '<html>';
+print '<head>';
+print '<title>Sleeping Parrots</title>';
+print '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+print '<meta name="licence" content="GPL"/>';
+print '<meta name="copyright" content="www.brentc.net"/>';
+print '<link rel="icon" href="/media/parrot-media/favicon.png" type="image/png"/>';
+print '</head>';
 print '<body>';
 
 print '<a href="index.cgi" title="Parrot home">Roost</a>';
 
+print '<img src="/media/parrot-media/parrot2.gif" alt="Parrot" style="float:right;"/>';
+
 print '<h1>Sleeping Parrots</h1>';
+
 print '<h2>Your Parrots</h2>';
 
 #validate...
@@ -57,6 +67,7 @@ while(1)
    if ($user eq $q->param('email') || $parrot eq "TestParrot" )
    {
       print '<form method="post" action = "awaken.cgi">';
+      print '<img src="/media/parrot-media/parrot.gif" alt="Parrot" valign="middle"/>&nbsp;';
       print '<input type="hidden" name = "email" value="'.$q->param('email').'" />';	
       print '<input type="hidden" name = "parrot" value="'.$parrot.'" />';	
       print $parrot;

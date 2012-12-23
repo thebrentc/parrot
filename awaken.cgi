@@ -8,9 +8,18 @@ use CGI;
 print "Content-type: text/html\n\n";
 print '<!DOCTYPE HTML>';
 print '<html>';
+print '<head>';
+print '<title>Parrot awake</title>';
+print '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+print '<meta name="copyright" content="www.brentc.net"/>';
+print '<meta name="licence" content="GPL"/>';
+print '<link rel="icon" href="/media/parrot-media/favicon.png" type="image/png"/>';
+print '</head>';
 print '<body>';
 
 print '<a href="index.cgi" title="Parrot home">Roost</a>';
+
+print '<img src="/media/parrot-media/parrot3.gif" alt="Parrot" style="float:right;"/>';
 
 print '<h1>Sleeping Parrots</h1>';
 print '<h2>Awaken Parrot</h2>';

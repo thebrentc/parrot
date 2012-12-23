@@ -7,6 +7,13 @@ use CGI;
 print "Content-type: text/html\n\n";
 #print '<!DOCTYPE HTML>';
 #print '<html>';
+#print '<head>';
+#print '<title>Sleeping Parrots</title>';
+#print '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+#print '<meta name="reply-to" content="www.brentc.net"/>';
+#print '<meta name="licence" content="GPL"/>';
+#print '<link rel="icon" href="favicon.png" type="image/png"/>';
+#print '</head>';
 #print '<body>';
 
 #determine path of script (whether running as .cgi or an SSI include)
@@ -14,6 +21,8 @@ my $path = $ENV{'SCRIPT_NAME'};
 if (rindex($path,"/") < 0) { $path = '.'; } else { $path = substr($path,0,rindex($path,"/")); }
 
 print '<h1>Sleeping Parrots</h1>';
+
+print '<img src="/media/parrot-media/parrot1.gif" alt="Parrot" style="float:right;"/>';
 
 print qq^
 <p>There are sleeping Parrots that have secrets. Users are linked to Parrots by email address. A user can wake a Parrot which will then email its secret to the user. Other users linked to that Parrot will be notified that it has been awakened.</p>

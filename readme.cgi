@@ -7,6 +7,14 @@ use CGI;
 print "Content-type: text/html\n\n";
 print '<!DOCTYPE HTML>';
 print '<html>';
+print '<head>';
+print '<title>Sleeping Parrots Readme</title>';
+print '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+print '<meta name="copyright" content="www.brentc.net"/>';
+print '<meta name="licence" content="GPL"/>';
+print '<link rel="icon" href="/media/parrot-media/favicon.png" type="image/png"/>';
+print '</head>';
+
 print '<body>';
 
 print '<a href="index.cgi" title="Parrot home">Roost</a>';
